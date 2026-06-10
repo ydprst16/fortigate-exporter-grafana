@@ -76,36 +76,6 @@ sudo mkdir -p /etc/fortigate_exporter
 sudo vim /etc/fortigate_exporter/fortigate-key.yaml
 ```
 
-Example:
-
-```yaml
-"https://10.10.10.4:8443":
-  token: "YOUR_API_TOKEN"
-  probes:
-    include:
-      - System
-      - VPN
-      - Firewall/Policies
-      - VirtualWAN
-      - System/LinkMonitor
-      - WebUI/State
-      - OSPF/Neighbors
-      - License/Status
-
-"https://10.20.5.1:8443":
-  token: "YOUR_API_TOKEN"
-  probes:
-    include:
-      - System
-      - VPN
-      - Firewall/Policies
-      - VirtualWAN
-      - System/LinkMonitor
-      - WebUI/State
-      - OSPF/Neighbors
-      - License/Status
-```
-
 ## Systemd Service
 
 Create a systemd service file:
