@@ -106,10 +106,6 @@ Example:
       - License/Status
 ```
 
-> **Important:** Never commit API tokens to Git repositories.
-
----
-
 ## Systemd Service
 
 Create a systemd service file:
